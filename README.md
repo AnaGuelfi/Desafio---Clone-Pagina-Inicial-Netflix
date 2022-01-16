@@ -1,2 +1,2 @@
 # Desafio---Clone-Pagina-Inicial-Netflix
-Executando o Desafio de Projeto presente no Bootcamp: HTML Web Developer, da DIO.me.
+Executando o Desafio de Projeto presente no Bootcamp: HTML Web Developer, da DIO.me. Orientações: Recrie a interface do principal site de streaming mundial utilizando tecnologias simples como HTML5, CSS3 e JavaScript. Nesse projeto você aprenderá: como estruturar um layout, técnicas de CSS3 com containers e variáveis, como posicionar os elementos com Flexbox e como utilizar plugins JQuery a favor da sua aplicação.
