@@ -1,0 +1,118 @@
+/* raiz do documento */
+:root{
+	/* variáveis para facilitar manipulação */
+	--vermelho: #E50914;
+	--preto: #141414;
+}
+
+/* reset css */
+*{
+	margin: 0;
+	padding: 0;
+	/* assegurar que os tamanhos sejam os definidos. limite é a borda do elemento */
+	box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body{
+	background: var(--preto);
+	font-family: 'Arial', Times, serif;
+	color: #FFF;
+}
+
+header .container{
+	/* padrão em linha */
+	display: flex;
+	/* default */
+	/* vertical */
+	flex-direction: row;
+	align-items: center;
+	/* alinha horizontalmente quando o flex-direction é row; distância entre a primeira tag filha e a segunda */
+	justify-content: space-between;
+}
+
+header .logo{
+	margin-left: 5px;
+	color: var(--vermelho);
+	font-family: 'Arial Black';
+	font-size: 40px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #AAA;
+	margin-right: 10px;
+}
+
+header nav a:hover{
+	color: #FFF;
+}
+
+/* Filme Principal */
+.filme-principal{
+	font-size: 16px;
+	/* linear-gradient(): fundo para melhorar a leitura */
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/twd_capa.jpg');
+	height: 400px;
+	/* especificar o tamanho da imagem presente no background */
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	/* alinha verticalmente quando o flex-direction é row; */
+	justify-content: center;
+	/* começar sempre da esquerda */
+	align-items: flex-start;
+}
+
+.filme-principal .descricao{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+	margin-top: 15%;
+	font-size: 40px;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+	background-color: rgba(0,0,0,.50);
+	border: none;
+	color: #FFF;
+	padding: 15px;
+	margin-right: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	/* transição entre animações */
+	transition: .3s ease all;
+}
+
+.botao:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+.botao i{
+	margin-right: 8px;
+}
+
+/* WRAPPER/CONTAINER = ENVELOPAR
+Facilita manipulação; */
+.container{
+	margin-left: 30px;
+}
+
+.filme-principal .container{
+	width: 70%;
+}
+
+.box-filme{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.carrossel-filmes{
+	margin-top 5px;
+}
